@@ -1,7 +1,9 @@
 import React from 'react';
 
-function Pricingp() {
-    return ( <h1>Pricing</h1> );
+function Pricing() {
+    return ( 
+        "pricing"
+    );
 }
 
-export default Pricingp;
+export default Pricing;

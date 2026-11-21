@@ -1,6 +1,6 @@
 import React from 'react';
 import Brokerage from './Brokerage';
-import Pricingp from './Pricing';
+import Pricing from './Pricing';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 
@@ -9,7 +9,7 @@ function Pricingpage() {
     <>
     <Navbar/>
     <Brokerage/>
-    <Pricingp/>
+    <Pricing/>
     <Footer/>
 
     </> );
