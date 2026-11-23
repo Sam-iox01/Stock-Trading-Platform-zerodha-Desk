@@ -8,7 +8,7 @@ function Education() {
                     <img src='media/images/education.svg' style={{width:"70%"}}>
                     </img>
                 </div>
-                <div className='col-6'>
+                <div className='col-6 mb-5'>
                     <h1 className='fs-2' >Free and open market education</h1>
                     <p className = 'mt-4'>Varsity, the largest online stock market education book in the world 
                         <br></br>covering everythiing from the basics to advanced trading.
