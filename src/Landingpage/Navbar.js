@@ -1,50 +1,63 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-
-const navLinks = [
-  { label: 'Signup', to: '/signup' },
-  { label: 'About', to: '/about' },
-  { label: 'Products', to: '/product' },
-  { label: 'Pricing', to: '/pricing' },
-  { label: 'Support', to: '/support' },
-];
+import React from "react";
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header className="site-navbar">
-      <nav className="site-navbar__inner" aria-label="Main navigation">
-        <Link className="site-navbar__brand" to="/" aria-label="Zerodha home">
-          <img src="/media/images/logo.svg" alt="Zerodha" />
-        </Link>
-
+    <nav
+      class="navbar navbar-expand-lg border-bottom"
+      style={{ backgroundColor: "#FFF" }}
+    >
+      <div class="container p-2">
+        <a class="navbar-brand" href="#">
+          <img
+            src="media/images/logo.svg"
+            style={{ width: "25%" }}
+            alt="Logo"
+          />
+        </a>
         <button
-          className="site-navbar__toggle"
+          class="navbar-toggler"
           type="button"
-          aria-expanded={menuOpen}
-          aria-controls="site-navbar-links"
-          aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-          onClick={() => setMenuOpen((open) => !open)}
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span />
-          <span />
-          <span />
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div
-          className={`site-navbar__links${menuOpen ? ' site-navbar__links--open' : ''}`}
-          id="site-navbar-links"
-        >
-          {navLinks.map(({ label, to }) => (
-            <Link key={to} to={to} onClick={() => setMenuOpen(false)}>
-              {label}
-            </Link>
-          ))}
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <ul class="navbar-nav mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Signup
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Product
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </form>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }
 
