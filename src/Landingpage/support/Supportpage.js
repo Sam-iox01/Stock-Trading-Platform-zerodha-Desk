@@ -8,7 +8,7 @@ function Supportpage(){
         <>
         <Hero/>
         <Createticket/>
-        <Footer/>
+        
         </>
     );
 }

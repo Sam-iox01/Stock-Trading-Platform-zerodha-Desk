@@ -8,7 +8,7 @@ function Aboutpage() {
     <>
     <Hero/>
     <Team/>
-    <Footer/>
+    
     </> );
 }
 

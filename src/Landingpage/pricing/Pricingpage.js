@@ -8,7 +8,7 @@ function Pricingpage() {
     <>
     <Brokerage/>
     <Pricing/>
-    <Footer/>
+    
 
     </> );
 }

@@ -4,13 +4,13 @@ function Footer() {
     return ( 
      <footer style={{ backgroundColor: "rgb(250, 250, 250)" }}>
     <div className='container border-top-mt-5'>
-        <div className='row mt-5'>
-            <div className='col'>
+        <div className='row '>
+            <div className='col mt-5'>
                 <img src='media/images/logo.svg' style={{width:"50%"}}></img>
                 <p> &copy; 2010 - 2026, Not Zerodha Broking Ltd.<br></br>
                 All rights reserved,</p>
             </div>
-            <div className='col'>
+            <div className='col  mt-5'>
                 <p>Company</p>
             <a href="">About</a>
             <br />
@@ -29,7 +29,7 @@ function Footer() {
             <a href="">Zerodha cares (CSR)</a>
             <br />
             </div>
-            <div className='col'>
+            <div className='col  mt-5'>
                 <p>Support</p>
             <a href="">Contact</a>
             <br />
@@ -42,7 +42,8 @@ function Footer() {
             <a href="">Downloads & resources</a>
             <br />
             </div>
-            <div className='col'><p>Account</p>
+            <div className='col  mt-5'>
+                <p>Account</p>
             <a href="">Open an account</a>
             <br />
             <a href="">Fund transfer</a>
